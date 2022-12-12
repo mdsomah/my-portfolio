@@ -1,0 +1,84 @@
+/* Section Styling */
+.section-wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.section-wrapper-main {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+  background: rgba(154, 235, 242, 0.07);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.1px);
+  -webkit-backdrop-filter: blur(2.1px);
+  padding-right: 50px;
+  z-index: 1000;
+}
+
+.section-wrapper .section-wrapper-main .section-wrapper-title h1,
+.section-wrapper .section-wrapper-main .section-wrapper-title h5,
+.section-wrapper .section-wrapper-main .section-wrapper-title p,
+.section-wrapper .section-wrapper-main .section-wrapper-img img {
+  position: relative;
+  bottom: 100px;
+}
+
+.section-wrapper .section-wrapper-main .section-wrapper-title h1,
+.section-wrapper .section-wrapper-main .section-wrapper-title h5,
+.section-wrapper .section-wrapper-main .section-wrapper-title p {
+  color: white;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+.section-wrapper .section-wrapper-main .section-wrapper-title h5 {
+  text-align: left;
+  margin-top: 60px;
+}
+
+.section-wrapper .section-wrapper-main .section-wrapper-title h1 {
+  font-family: var(--third-font);
+  font-weight: 700;
+}
+
+.section-wrapper .section-wrapper-main .section-wrapper-title p {
+  font-family: var(--fifth-fonts);
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.6rem;
+}
+
+.section-wrapper .section-wrapper-main .section-wrapper-img img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  position: relative;
+  top: 0px;
+}
+
+.section-wrapper .section-wrapper-title .bi {
+  display: inline-block;
+  margin-top: 30px;
+  position: relative;
+  left: 43%;
+}
+
+.section-wrapper .section-wrapper-title .bi-circle-fill {
+  color: white;
+  margin: 0 5px;
+}
+
+.section-wrapper .section-wrapper-title .bi-circle-fill:hover {
+  color: crimson;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+/* End of Section Wrapper */
